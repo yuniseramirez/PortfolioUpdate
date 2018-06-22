@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="wrapNavBar">
+      <%- include('partials/navbar.ejs') %>
+    </div>
+    <div class="post-handler">
+
+      <div class="heading">
+        <h1>Yunise Ramirez</h1>
+      </div>
+
+
+
+  <div class= "row id="sunset">
+    <div class="column">
+      <img src="images/sunset.jpg" alt="Sunset" style="width:25%">
+      <h3> Sunset</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="column">
+      <img src= "images/sunset.jpg" alt="Sunset" style="width:25%">
+      <h3>Sunset</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  <div class= "row id="sunset">
+
+    <div class="column">
+      <img src="images/sunset.jpg" alt="Sunset" style="width:25%">
+      <h3>Sunset</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="column">
+      <img src="images/sunset.jpg" alt="Sunset" style="width:25%">
+      <h3>Sunset</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+</div>
+
+       
+
+
+ <div class="transbox" class="form">
+        <form action="post" method="POST">
+
+           <h2> How was your day in the Tech World?</h2>
+
+          
+
+
+          <div class="subject">
+            <label for="subject">Subject </label>
+            <input type="text" name="subject" required="true">
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <input type="text" name="message" required="true">
+          </div>
+
+          <div class="submit">
+            <input type="submit" name="submit">
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <%- include('partials/footer.ejs') %>
+</body>
+
+</html>
